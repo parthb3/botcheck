@@ -37,7 +37,7 @@ botcheck = function(user) {
   body_json = RJSONIO::toJSON(body, auto_unbox = T, pretty = T)
   
   # Make the API request
-  result = POST("https://rapidapi.com/OSoMe/api/botometer-pro/",
+  result = POST("https://botometer-pro.p.rapidapi.com/2/check_account",
                  encode="json",
                  add_headers(`X-Mashape-Key`=Mashape_key),
                  body=body_json)
