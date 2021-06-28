@@ -39,7 +39,7 @@ botcheck = function(user) {
   # Make the API request
   result = POST("https://botometer-pro.p.rapidapi.com/2/check_account",
                  encode="json",
-                 add_headers(`X-Mashape-Key`=Mashape_key),
+                 add_headers(`X-RapidAPI-Key`=RapidAPI_key),
                  body=body_json)
   
   # Parse result
